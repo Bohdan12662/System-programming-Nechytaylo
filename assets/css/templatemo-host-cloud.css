@@ -1124,10 +1124,7 @@ footer .sub-footer a {
 		margin-top: 20px;
 	}
 }
-h4{
-	font-size: 24px;
-    color: #fff;	
-}
+
 
 @media (max-width: 576px) {
 	.functional-buttons	ul li:first-child a {
