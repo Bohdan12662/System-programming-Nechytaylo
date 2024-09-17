@@ -238,4 +238,11 @@
     margin-right: 10px; /* Відступ між іконкою і текстом */
     font-size: 16px; /* Розмір іконки */
   }
+  .text_1 {
+    text-align: center; /* Вирівнює текст по центру */
+    font-family: 'Arial', sans-serif; /* Вибір шрифту */
+    font-size: 24px; /* Розмір шрифту */
+    color: #333; /* Колір тексту */
+    margin-bottom: 20px; /* Відступ знизу */
+  }
   
