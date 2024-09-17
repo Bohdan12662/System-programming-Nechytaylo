@@ -205,7 +205,7 @@
     padding: 20px 30px; /* Внутрішні відступи для простору навколо тексту */
     border-radius: 8px; /* Округлені краї блоку */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
-    margin: 20px 0; /* Зовнішні відступи зверху та знизу */
+    margin: 20px 20px; /* Зовнішні відступи зверху та знизу */
   }
   
   .text3 p {
@@ -241,10 +241,11 @@
   .text_1 {
     text-align: center; /* Вирівнює текст по центру */
     font-family: 'Arial', sans-serif; /* Вибір шрифту */
+    font-weight: bold;
     font-size: 26px; /* Розмір шрифту */
     color: #333; /* Колір тексту */
     margin-bottom: 50px; /* Відступ знизу */
-    font-weight: bold;
+    
   }
   .highlighted-text {
     font-weight: bold; /* Зробить текст жирним */
