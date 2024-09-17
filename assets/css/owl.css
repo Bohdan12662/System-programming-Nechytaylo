@@ -254,15 +254,7 @@
     margin-bottom: 20px; /* Відступ знизу, за потреби */
   }
 
-  body {
-    font-family: Arial, sans-serif; /* Основний шрифт для всього сайту */
-    background-color: #f4f4f4; /* Світлий фон для всього сайту */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.commands-container {
+  .commands-container {
     max-width: 800px; /* Максимальна ширина контейнера */
     margin: 20px auto; /* Центрує контейнер горизонтально */
     padding: 20px; /* Внутрішні відступи контейнера */
@@ -272,12 +264,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
 }
 
-.commands-container h2 {
-    text-align: center; /* Вирівнює заголовок по центру */
-    font-size: 24px; /* Розмір шрифту для заголовка */
-    color: #333; /* Колір тексту заголовка */
-    margin-bottom: 20px; /* Відступ знизу заголовка */
-}
+
 
 .commands-box {
     background-color: #f9f9f9; /* Світлий фон для блоку з командами */
@@ -295,6 +282,8 @@ pre {
     font-size: 16px; /* Розмір шрифту для коду */
     color: #333; /* Колір тексту для коду */
     margin: 0; /* Видаляє зовнішні відступи */
+    white-space: pre-wrap; /* Зберігає пробіли та перенос рядків */
+    word-break: break-word; /* Перенос слів, якщо необхідно */
 }
 
 button {
@@ -313,5 +302,3 @@ button {
 button:hover {
     background-color: #219150; /* Темніший відтінок фону при наведенні */
 }
-
-  
