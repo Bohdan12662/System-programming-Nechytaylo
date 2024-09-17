@@ -197,20 +197,45 @@
     padding-bottom: 100px;
     padding-top: 80px;
   }
-  h3 {
-    text-align: center; /* Центруємо заголовок */
-    font-family: 'Arial', sans-serif; /* Встановлюємо шрифт */
-    font-size: 28px; /* Розмір шрифту */
-    color: #333; /* Колір тексту */
-    padding-bottom: 50px; /* Відступ знизу */
+  h3{
+    padding-bottom: 40px;
+  }
+  .text3 {
+    background-color: #f9f9f9; /* Світлий фон для блоку */
+    padding: 20px 30px; /* Внутрішні відступи для простору навколо тексту */
+    border-radius: 8px; /* Округлені краї блоку */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+    margin: 20px 0; /* Зовнішні відступи зверху та знизу */
   }
   
-  p {
-    font-family: 'Arial', sans-serif; /* Шрифт для абзацу */
-    font-size: 18px; /* Збільшуємо розмір шрифту */
-    line-height: 1.6; /* Встановлюємо відстань між рядками */
-    color: #555; /* Колір тексту */
-    text-align: justify; /* Вирівнювання тексту */
-    margin-bottom: 20px; /* Відступ знизу */
+  .text3 p {
+    font-family: 'Arial', sans-serif; /* Шрифт Arial для тексту */
+    font-size: 18px; /* Розмір шрифту */
+    color: #333; /* Темний колір тексту */
+    line-height: 1.6; /* Відстань між рядками */
+    margin-bottom: 20px; /* Відступ після абзацу */
+    text-align: justify; /* Вирівнювання тексту по ширині */
+  }
+  
+  .text3 ul {
+    padding-left: 20px; /* Відступ для маркерів списку */
+  }
+  
+  .text3 ul li {
+    font-family: 'Arial', sans-serif; /* Шрифт для списку */
+    font-size: 16px; /* Розмір шрифту для списку */
+    color: #555; /* Трохи світліший колір для списку */
+    margin-bottom: 10px; /* Відступ між елементами списку */
+  }
+  
+  .text3 ul li strong {
+    color: #333; /* Більш насичений колір для виділення жирним */
+  }
+  
+  .text3 ul li::before {
+    content: '✔'; /* Іконка перед кожним елементом списку */
+    color: #27ae60; /* Зелений колір іконки */
+    margin-right: 10px; /* Відступ між іконкою і текстом */
+    font-size: 16px; /* Розмір іконки */
   }
   
