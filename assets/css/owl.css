@@ -254,20 +254,44 @@
     margin-bottom: 20px; /* Відступ знизу, за потреби */
   }
 
-  .commands-container {
-    max-width: 800px; /* Максимальна ширина контейнера */
+ 
+  body {
+    font-family: Arial, sans-serif; /* Основний шрифт для сторінки */
+    background-color: #f4f4f4; /* Світлий фон для всієї сторінки */
+    margin: 0; /* Відступи по замовчуванню */
+    padding: 0; /* Внутрішні відступи по замовчуванню */
+}
+
+.container {
+    max-width: 900px; /* Максимальна ширина контейнера */
     margin: 20px auto; /* Центрує контейнер горизонтально */
     padding: 20px; /* Внутрішні відступи контейнера */
+}
+
+.text_1 {
+    text-align: center; /* Вирівнює текст по центру */
+    font-size: 26px; /* Розмір шрифту */
+    color: #333; /* Колір тексту */
+    margin-bottom: 50px; /* Відступ знизу */
+}
+
+.commands-container {
     background-color: #fff; /* Білий фон для контейнера */
     border: 1px solid #ddd; /* Світло-сіра рамка контейнера */
     border-radius: 8px; /* Округлені краї контейнера */
+    padding: 20px; /* Внутрішні відступи контейнера */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
 }
 
-
+.commands-container h2 {
+    text-align: center; /* Вирівнює заголовок по центру */
+    font-size: 24px; /* Розмір шрифту для заголовка */
+    color: #333; /* Колір тексту заголовка */
+    margin-bottom: 20px; /* Відступ знизу заголовка */
+}
 
 .commands-box {
-    background-color: #f9f9f9; /* Світлий фон для блоку з командами */
+    background-color: #eaeaea; /* Світлий фон для блоку з командами */
     border: 1px solid #ddd; /* Світло-сіра рамка блоку */
     border-radius: 8px; /* Округлені краї блоку */
     padding: 15px; /* Внутрішні відступи для блоку */
@@ -275,7 +299,7 @@
 }
 
 pre {
-    background-color: #eaeaea; /* Світлий фон для блоку коду */
+    background-color: #fff; /* Білий фон для блоку коду */
     padding: 15px; /* Внутрішні відступи для блоку коду */
     border-radius: 8px; /* Округлені краї блоку коду */
     font-family: 'Courier New', monospace; /* Моноширинний шрифт для коду */
