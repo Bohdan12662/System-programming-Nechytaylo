@@ -243,6 +243,12 @@
     font-family: 'Arial', sans-serif; /* Вибір шрифту */
     font-size: 24px; /* Розмір шрифту */
     color: #333; /* Колір тексту */
-    margin-bottom: 20px; /* Відступ знизу */
+    margin-bottom: 50px; /* Відступ знизу */
+  }
+  .highlighted-text {
+    font-weight: bold; /* Зробить текст жирним */
+    font-size: 18px; /* Може бути змінено для відповідного розміру тексту */
+    color: #333; /* Колір тексту, за потреби можна змінити */
+    margin-bottom: 20px; /* Відступ знизу, за потреби */
   }
   
