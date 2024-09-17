@@ -228,9 +228,10 @@ https://templatemo.com/tm-541-host-cloud
           <div class="col-md-8 offset-md-2">
             <div class="section-heading">
               <h2>Cloud Hosting Plans</h2>
-              <div class="git-commands">
+              <div class="commands-container">
                 <h2>10 базових команд Git</h2>
-                <pre id="commands">
+                <div class="commands-box">
+                    <pre id="commands">
         git init      # Ініціалізує новий Git репозиторій
         git clone <url>      # Клонує репозиторій з віддаленого сервера
         git add <file>      # Додає файл до індексу (staging area)
@@ -241,8 +242,9 @@ https://templatemo.com/tm-541-host-cloud
         git push      # Відправляє коміти до віддаленого репозиторію
         git branch      # Показує список гілок
         git merge <branch>      # Об'єднує вказану гілку з поточною
-                </pre>
-                <button id="copyButton">Копіювати</button>
+                    </pre>
+                    <button id="copyButton">Копіювати</button>
+                </div>
             </div>
               <p>Lorem ipsum dolor amet taxidermy sriracha cardigan salvia actually vice migas enamel pin sustainable carry scenester lomo hot chicken farm table actually kinfolk.</p>
             </div>
@@ -515,6 +517,15 @@ https://templatemo.com/tm-541-host-cloud
           t.style.color='#fff';
           }
       }
+      document.getElementById('copyButton').addEventListener('click', function() {
+    const text = document.getElementById('commands').innerText;
+    navigator.clipboard.writeText(text).then(function() {
+        alert('Команди скопійовані в буфер обміну!');
+    }, function(err) {
+        console.error('Помилка копіювання: ', err);
+    });
+});
+
     </script>
 
   </body>
