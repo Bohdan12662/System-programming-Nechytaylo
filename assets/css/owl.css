@@ -197,27 +197,20 @@
     padding-bottom: 100px;
     padding-top: 80px;
   }
-  h3{
-    padding-bottom: 50px;
-    text-align: center; /* Відцентрування заголовка */
-   
-    font-size: 24px; /* Збільшення розміру шрифту */
-    
+  h3 {
+    text-align: center; /* Центруємо заголовок */
+    font-family: 'Arial', sans-serif; /* Встановлюємо шрифт */
+    font-size: 28px; /* Розмір шрифту */
+    color: #333; /* Колір тексту */
+    padding-bottom: 50px; /* Відступ знизу */
   }
   
-  
-  p, ul {
-    font-family: 'Arial', sans-serif; /* Нормальний шрифт для абзацу і списку */
-    font-size: 18px; /* Розмір шрифту */
-    line-height: 1.6; /* Висота рядка для кращої читабельності */
-    color: #444; /* Колір тексту */
-  }
-  
-  ul {
-    padding-left: 20px; /* Відступ для списку */
-  }
-  
-  li {
-    margin-bottom: 10px; /* Відступ між пунктами списку */
+  p {
+    font-family: 'Arial', sans-serif; /* Шрифт для абзацу */
+    font-size: 18px; /* Збільшуємо розмір шрифту */
+    line-height: 1.6; /* Встановлюємо відстань між рядками */
+    color: #555; /* Колір тексту */
+    text-align: justify; /* Вирівнювання тексту */
+    margin-bottom: 20px; /* Відступ знизу */
   }
   
