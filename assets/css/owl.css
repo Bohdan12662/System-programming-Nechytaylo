@@ -201,94 +201,78 @@
     padding-bottom: 40px;
   }
   .text3 {
-  background-color: #f2f2f2; /* Світло-сірий фон */
-  padding: 20px 30px; /* Внутрішні відступи */
-  border-radius: 10px; /* Округлені краї блоку */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
-  margin: 20px 0; /* Відступи зверху і знизу */
-  text-align: center; /* Вирівнювання всередині блоку по центру */
-}
-
-.text3 p {
-  font-family: 'Arial', sans-serif; /* Шрифт для абзацу */
-  font-size: 18px; /* Розмір шрифту */
-  color: #333; /* Темний колір тексту */
-  margin-bottom: 20px; /* Відступ після абзацу */
-}
-
-.text3 ul {
-  padding-left: 0; /* Вирівнювання списку */
-  list-style-type: none; /* Вимкнути стандартні маркери списку */
-}
-
-.text3 ul li {
-  font-family: 'Arial', sans-serif; /* Шрифт для списку */
-  font-size: 16px; /* Розмір шрифту для елементів списку */
-  color: #555; /* Трохи світліший колір тексту */
-  margin-bottom: 10px; /* Відступ між елементами списку */
-  position: relative; /* Для додавання іконки */
-}
-
-.text3 ul li::before {
-  content: '✔'; /* Додаємо галочку перед кожним елементом */
-  color: #27ae60; /* Зелений колір галочки */
-  font-size: 18px; /* Розмір іконки */
-  position: absolute; /* Позиціонування галочки */
-  left: -25px; /* Відступ галочки зліва */
-  top: 0; /* Вирівнювання по верху елемента */
-}
-
-.text3 p, .text3 ul {
-  text-align: left; /* Вирівнюємо текст і список по лівому краю */
-  margin-left: auto; /* Для центрування всередині блоку */
-  margin-right: auto;
-  max-width: 600px; /* Максимальна ширина тексту */
-}
-.git-advantages {
-  background-color: #f8f9fa; /* Легкий фон для виділення блоку */
-  padding: 20px 40px; /* Внутрішні відступи */
-  border-radius: 8px; /* Округлені кути */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
-  max-width: 800px; /* Максимальна ширина блоку */
-  margin: 30px auto; /* Центрування блоку */
-  text-align: left; /* Вирівнювання тексту по лівому краю */
-}
-
-.git-advantages h3 {
-  font-family: 'Arial', sans-serif; /* Шрифт заголовка */
-  font-size: 24px; /* Розмір заголовка */
-  color: #333; /* Темний колір тексту */
-  text-align: center; /* Центрування заголовка */
-  margin-bottom: 20px; /* Відступ після заголовка */
+    background-color: #f9f9f9; /* Світлий фон для блоку */
+    padding: 20px 30px; /* Внутрішні відступи для простору навколо тексту */
+    border-radius: 8px; /* Округлені краї блоку */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+    margin: 20px 0; /* Зовнішні відступи зверху та знизу */
+  }
+  
+  .text3 p {
+    font-family: 'Arial', sans-serif; /* Шрифт Arial для тексту */
+    font-size: 18px; /* Розмір шрифту */
+    color: #333; /* Темний колір тексту */
+    line-height: 1.6; /* Відстань між рядками */
+    margin-bottom: 20px; /* Відступ після абзацу */
+    text-align: justify; /* Вирівнювання тексту по ширині */
+  }
+  
+  .text3 ul {
+    padding-left: 20px; /* Відступ для маркерів списку */
+  }
+  
+  .text3 ul li {
+    font-family: 'Arial', sans-serif; /* Шрифт для списку */
+    font-size: 16px; /* Розмір шрифту для списку */
+    color: #555; /* Трохи світліший колір для списку */
+    margin-bottom: 10px; /* Відступ між елементами списку */
+  }
+  
+  .text3 ul li strong {
+    color: #333; /* Більш насичений колір для виділення жирним */
+  }
+  
+  .text3 ul li::before {
+    content: '✔'; /* Іконка перед кожним елементом списку */
+    color: #27ae60; /* Зелений колір іконки */
+    margin-right: 10px; /* Відступ між іконкою і текстом */
+    font-size: 16px; /* Розмір іконки */
+  }
+  .git-advantages {
+    background-color: #f9f9f9; /* Світлий фон для блоку */
+    padding: 20px 30px; /* Внутрішні відступи для простору навколо тексту */
+    border-radius: 8px; /* Округлені краї блоку */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+    margin: 20px 0; /* Зовнішні відступи зверху та знизу */
 }
 
 .git-advantages p {
-  font-family: 'Arial', sans-serif; /* Шрифт абзацу */
-  font-size: 18px; /* Розмір шрифту */
-  color: #555; /* Трохи світліший текст */
-  line-height: 1.6; /* Відстань між рядками */
-  margin-bottom: 20px; /* Відступ після абзацу */
+    font-family: 'Arial', sans-serif; /* Шрифт Arial для тексту */
+    font-size: 18px; /* Розмір шрифту */
+    color: #333; /* Темний колір тексту */
+    line-height: 1.6; /* Відстань між рядками */
+    margin-bottom: 20px; /* Відступ після абзацу */
+    text-align: justify; /* Вирівнювання тексту по ширині */
 }
 
 .git-advantages ul {
-  list-style-type: none; /* Без стандартних маркерів списку */
-  padding-left: 0; /* Відсутність відступів для списку */
+    padding-left: 20px; /* Відступ для маркерів списку */
 }
 
 .git-advantages ul li {
-  font-family: 'Arial', sans-serif; /* Шрифт для списку */
-  font-size: 16px; /* Розмір шрифту для пунктів */
-  color: #444; /* Темніший текст */
-  margin-bottom: 10px; /* Відступ між елементами списку */
-  position: relative; /* Для іконки перед кожним пунктом */
-  padding-left: 30px; /* Відступ для розміщення іконки */
+    font-family: 'Arial', sans-serif; /* Шрифт для списку */
+    font-size: 16px; /* Розмір шрифту для списку */
+    color: #555; /* Трохи світліший колір для списку */
+    margin-bottom: 10px; /* Відступ між елементами списку */
+}
+
+.git-advantages ul li strong {
+    color: #333; /* Більш насичений колір для виділення жирним */
 }
 
 .git-advantages ul li::before {
-  content: '✔'; /* Іконка у вигляді галочки */
-  color: #27ae60; /* Зелений колір іконки */
-  font-size: 18px; /* Розмір іконки */
-  position: absolute; /* Позиціонування іконки */
-  left: 0; /* Відступ зліва */
-  top: 0; /* Вирівнювання іконки по верху тексту */
+    content: '✔'; /* Іконка перед кожним елементом списку */
+    color: #27ae60; /* Зелений колір іконки */
+    margin-right: 10px; /* Відступ між іконкою і текстом */
+    font-size: 16px; /* Розмір іконки */
 }
