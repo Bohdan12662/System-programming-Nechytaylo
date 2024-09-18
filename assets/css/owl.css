@@ -326,7 +326,7 @@ strong {
     color: #f8f8f2; /* Білий для тексту опису */
 }
 .background-image-pricing {
-  height: calc(100% + 500px); /* Збільшення висоти на 800 пікселів */
+  height: calc(100% + 400px); /* Збільшення висоти на 800 пікселів */
   background-size: cover; /* Щоб фон розтягувався по всій області */
   background-position: center; /* Центрування фону */
 }
