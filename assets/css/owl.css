@@ -401,4 +401,5 @@ strong {
 }
 .custom-footer .col-md-12.text-center p {
   margin-top: 20px; /* Відступ зверху */
+  padding-top: 20px;
 }
