@@ -332,11 +332,12 @@ strong {
 }
 .certificate-block {
   text-align: center; /* Вирівнює текст і зображення по центру */
-  margin: 40px 0; /* Відступи зверху та знизу */
+  margin: 40px auto; /* Відступи зверху та знизу, центрування по горизонталі */
   padding: 20px; /* Внутрішні відступи */
   background-color: #f9f9f9; /* Світлий фон для блоку */
   border-radius: 8px; /* Округлені краї блоку */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+  max-width: 900px; /* Обмежує максимальну ширину блоку */
 }
 
 .certificate-block h3 {
@@ -352,4 +353,5 @@ strong {
   border: 2px solid #ddd; /* Тонка рамка навколо зображення */
   border-radius: 8px; /* Округлені краї зображення */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легка тінь для зображення */
+  margin-bottom: 60px; /* Відступ знизу для зображення */
 }
