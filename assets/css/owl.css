@@ -23,9 +23,7 @@
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
+
 
 .main-button:hover {
   background-color: #45a049; /* Темніший зелений при наведенні */
@@ -279,6 +277,8 @@
     color: #333; /* Колір тексту, за потреби можна змінити */
     margin-bottom: 20px; /* Відступ знизу, за потреби */
   }
-
+  .hidden {
+    display: none;
+  }
  
   
