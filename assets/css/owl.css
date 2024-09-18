@@ -364,7 +364,7 @@ strong {
 .custom-footer h4 {
   font-size: 20px; /* Розмір заголовків секцій футера */
   margin-bottom: 20px; /* Відступ знизу заголовка */
-  color: #000000; /* Темний колір заголовка */
+  color: #ffffff; /* Темний колір заголовка */
 }
 
 .custom-footer .footer-list {
@@ -379,7 +379,7 @@ strong {
 
 .custom-footer .footer-list a {
   text-decoration: none; /* Видалити підкреслення з посилань */
-  color: #bebdbd; /* Колір посилань */
+  color: #ffffff; /* Колір посилань */
 }
 
 .custom-footer .footer-list a:hover {
@@ -387,7 +387,7 @@ strong {
 }
 
 .custom-footer .social-link {
-  color: #969696; /* Колір соціальних посилань */
+  color: #ffffff; /* Колір соціальних посилань */
   font-weight: bold; /* Жирний шрифт для соціальних посилань */
 }
 
@@ -397,7 +397,7 @@ strong {
 
 .custom-footer p {
   margin: 20px 0 0; /* Відступи для тексту */
-  color: #000000; /* Темний колір тексту */
+  color: #ffffff; /* Темний колір тексту */
 }
 .custom-footer .col-md-12.text-center p {
   margin-top: 20px; /* Відступ зверху */
