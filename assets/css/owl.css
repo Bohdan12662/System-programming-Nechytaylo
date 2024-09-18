@@ -399,3 +399,6 @@ strong {
   margin: 20px 0 0; /* Відступи для тексту */
   color: #333; /* Темний колір тексту */
 }
+.custom-footer .col-md-12.text-center p {
+  margin-top: 20px; /* Відступ зверху */
+}
