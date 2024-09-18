@@ -104,7 +104,7 @@ https://templatemo.com/tm-541-host-cloud
       </div>
     </div>
     <!-- Banner Ends Here -->
-
+    <div id="mainContent" class="hidden">
     <!-- Trusted Starts Here -->
     <div class="trusted-section">
       <div class="container">
@@ -414,7 +414,7 @@ https://templatemo.com/tm-541-host-cloud
       </div>
     </div>
     <!-- Testimonials Ends Here -->
-
+</div>
 
     <!-- Footer Starts Here -->
     <footer>
@@ -504,9 +504,11 @@ https://templatemo.com/tm-541-host-cloud
           }
       }
      
-      document.getElementById('startButton').addEventListener('click', function() {
-  document.getElementById('below-banner').style.display = 'block';
+      document.getElementById("startButton").addEventListener("click", function() {
+  document.getElementById("mainContent").classList.remove("hidden");
+  this.style.display = "none";  // Сховати кнопку після натискання
 });
+
 
 
     </script>
