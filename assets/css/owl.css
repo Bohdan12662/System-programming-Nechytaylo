@@ -6,6 +6,30 @@
 /*
  *  Owl Carousel - Core
  */
+
+/* Робимо все нижче банера невидимим */
+#below-banner {
+  display: none;
+}
+
+/* Стилі для кнопки */
+.main-button {
+  background-color: #4CAF50; /* Зелений колір фону */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main-button:hover {
+  background-color: #45a049; /* Темніший зелений при наведенні */
+}
+
+
 .owl-carousel {
   display: none;
   width: 100%;

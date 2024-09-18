@@ -79,7 +79,8 @@ https://templatemo.com/tm-541-host-cloud
             <div class="header-text caption">
              <h2>Курс: Системне програмування</h2>
              <h5>Зануртесь у світ системного програмування та опануйте ключові інструменти для створення надійних і високопродуктивних програм. Отримайте практичні навички розробки програмного забезпечення для різних операційних систем!</h5>
-
+<!-- Кнопка "Розпочати" -->
+<button id="startButton" class="main-button">Розпочати</button>
             <!--div id="search-section">
               	<form id="suggestion_form" name="gs" method="get" action="#">
                 <div class="searchText">
@@ -503,6 +504,9 @@ https://templatemo.com/tm-541-host-cloud
           }
       }
      
+      document.getElementById('startButton').addEventListener('click', function() {
+  document.getElementById('below-banner').style.display = 'block';
+});
 
 
     </script>
