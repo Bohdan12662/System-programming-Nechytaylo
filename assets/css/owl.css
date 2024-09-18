@@ -355,3 +355,47 @@ strong {
   margin-bottom: 100px; /* Відступ знизу для зображення */
 }
 
+.custom-footer {
+  background-color: #f1f1f1; /* Легкий фон */
+  padding: 40px 20px; /* Відступи зверху, знизу та по боках */
+  font-family: Arial, sans-serif; /* Простий шрифт */
+}
+
+.custom-footer h4 {
+  font-size: 20px; /* Розмір заголовків секцій футера */
+  margin-bottom: 20px; /* Відступ знизу заголовка */
+  color: #333; /* Темний колір заголовка */
+}
+
+.custom-footer .footer-list {
+  list-style: none; /* Видалити маркери списку */
+  padding: 0; /* Видалити відступи */
+  margin: 0; /* Видалити відступи */
+}
+
+.custom-footer .footer-list li {
+  margin-bottom: 10px; /* Відступ між елементами списку */
+}
+
+.custom-footer .footer-list a {
+  text-decoration: none; /* Видалити підкреслення з посилань */
+  color: #007bff; /* Колір посилань */
+}
+
+.custom-footer .footer-list a:hover {
+  text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.custom-footer .social-link {
+  color: #007bff; /* Колір соціальних посилань */
+  font-weight: bold; /* Жирний шрифт для соціальних посилань */
+}
+
+.custom-footer .social-link:hover {
+  text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.custom-footer p {
+  margin: 20px 0 0; /* Відступи для тексту */
+  color: #333; /* Темний колір тексту */
+}
