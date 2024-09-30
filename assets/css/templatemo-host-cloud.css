@@ -1151,3 +1151,36 @@ footer .sub-footer a {
 	}
 	
 }
+pre code {
+	display: block;
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+	font-size: 0.9em;
+	background: #2d2d2d;
+	color: #cccccc;
+	border-radius: 5px;
+	line-height: 1.5;
+  }
+  
+  .bash .comment {
+	color: #999999;
+  }
+  
+  .bash .keyword {
+	color: #f92672;
+	font-weight: bold;
+  }
+  
+  .bash .string {
+	color: #a6e22e;
+  }
+  
+  .bash .variable {
+	color: #fd971f;
+  }
+  
+  .bash .function {
+	color: #66d9ef;
+	font-weight: bold;
+  }
