@@ -198,136 +198,136 @@ https://templatemo.com/tm-541-host-cloud
     <!-- Testimonials Starts Here -->
     <div class="testimonials-section">
       <div class="container">
-        <div class="section-heading">
-          <div class="bash-script-section">
-            <h3 class="section-title">BASH Скрипт: Авторизація в системі</h3>
-            <div class="code-block">
-              <pre>
-                <code>
-                  #!/bin/bash
-
-                  # Ініціалізація хешованих паролів користувачів
-                  declare -A USERS
-                 
-                  USERS["admin"]="b9c9e2ddad32d206b927f939b36e5cd6b3b30f4a5b6235b51b5c1347f2c4ff48" # admin123 (хешований)
-                  
-                  # Функція для хешування пароля
-                  hash_password() {
-                      echo -n "$1" | sha256sum | awk '{print $1}'
-                  }
-                  
-                  # Авторизація
-                  login() {
-                      local attempts=0
-                      local max_attempts=3
-                  
-                      while [[ $attempts -lt $max_attempts ]]; do
-                          read -p "Введіть ім'я користувача: " username
-                  
-                          if [[ -z "${USERS[$username]}" ]]; then
-                              echo "Користувача не знайдено."
-                              attempts=$((attempts + 1))
-                              continue
-                          fi
-                  
-                          read -sp "Введіть пароль: " password
-                          echo
-                  
-                          hashed_password=$(hash_password "$password")
-                  
-                          if [[ "$hashed_password" == "${USERS[$username]}" ]]; then
-                              echo "Авторизація успішна! Ласкаво просимо, $username!"
-                              return 0
-                          else
-                              echo "Неправильний пароль."
-                              attempts=$((attempts + 1))
-                          fi
-                      done
-                  
-                      echo "Превищено кількість спроб авторизації!"
-                      return 1
-                  }
-                  
-                  # Функція для реєстрації нового користувача
-                  register_user() {
-                      read -p "Введіть нове ім'я користувача: " new_username
-                      if [[ -n "${USERS[$new_username]}" ]]; then
-                          echo "Користувач з таким іменем вже існує."
-                          return 1
-                      fi
-                  
-                      read -sp "Введіть пароль: " new_password
-                      echo
-                      read -sp "Підтвердіть пароль: " confirm_password
-                      echo
-                  
-                      if [[ "$new_password" != "$confirm_password" ]]; then
-                          echo "Паролі не співпадають."
-                          return 1
-                      fi
-                  
-                      USERS["$new_username"]="$(hash_password "$new_password")"
-                      echo "Користувача $new_username успішно зареєстровано!"
-                      return 0
-                  }
-                  
-                  # Меню після успішної авторизації
-                  post_login_menu() {
-                      while true; do
-                          echo "1) Вихід з системи"
-                          echo "2) Продовжити роботу"
-                          read -p "Оберіть дію: " choice
-                  
-                          case $choice in
-                              1)
-                                  echo "Вихід з системи. До побачення!"
-                                  exit 0
-                                  ;;
-                              2)
-                                  echo "Продовжуємо роботу..."
-                                  break
-                                  ;;
-                              *)
-                                  echo "Невірний вибір. Спробуйте ще раз."
-                                  ;;
-                          esac
-                      done
-                  }
-                  
-                  # Головне меню
-                  while true; do
-                      echo "1) Авторизація"
-                      echo "2) Реєстрація нового користувача"
-                      echo "3) Вихід"
-                      read -p "Оберіть дію: " choice
-                  
-                      case $choice in
-                          1)
-                              login
-                              if [[ $? -eq 0 ]]; then
-                                  post_login_menu
-                              fi
-                              ;;
-                          2)
-                              register_user
-                              ;;
-                          3)
-                              echo "Вихід із системи."
-                              exit 0
-                              ;;
-                          *)
-                              echo "Невірний вибір."
-                              ;;
-                      esac
-                  done
-                  
-                </code>
-              </pre>
-            </div>
+          <div class="section-heading">
+              <div class="bash-script-section">
+                  <h3 class="section-title">BASH Скрипт: Авторизація в системі</h3>
+                  <div class="code-block">
+                      <pre>
+                          <code class="bash">
+  #!/bin/bash
+  
+  # Ініціалізація хешованих паролів користувачів
+  declare -A USERS
+  
+  USERS["admin"]="b9c9e2ddad32d206b927f939b36e5cd6b3b30f4a5b6235b51b5c1347f2c4ff48" # admin123 (хешований)
+  
+  # Функція для хешування пароля
+  hash_password() {
+      echo -n "$1" | sha256sum | awk '{print $1}'
+  }
+  
+  # Авторизація
+  login() {
+      local attempts=0
+      local max_attempts=3
+  
+      while [[ $attempts -lt $max_attempts ]]; do
+          read -p "Введіть ім'я користувача: " username
+  
+          if [[ -z "${USERS[$username]}" ]]; then
+              echo "Користувача не знайдено."
+              attempts=$((attempts + 1))
+              continue
+          fi
+  
+          read -sp "Введіть пароль: " password
+          echo
+  
+          hashed_password=$(hash_password "$password")
+  
+          if [[ "$hashed_password" == "${USERS[$username]}" ]]; then
+              echo "Авторизація успішна! Ласкаво просимо, $username!"
+              return 0
+          else
+              echo "Неправильний пароль."
+              attempts=$((attempts + 1))
+          fi
+      done
+  
+      echo "Превищено кількість спроб авторизації!"
+      return 1
+  }
+  
+  # Функція для реєстрації нового користувача
+  register_user() {
+      read -p "Введіть нове ім'я користувача: " new_username
+      if [[ -n "${USERS[$new_username]}" ]]; then
+          echo "Користувач з таким іменем вже існує."
+          return 1
+      fi
+  
+      read -sp "Введіть пароль: " new_password
+      echo
+      read -sp "Підтвердіть пароль: " confirm_password
+      echo
+  
+      if [[ "$new_password" != "$confirm_password" ]]; then
+          echo "Паролі не співпадають."
+          return 1
+      fi
+  
+      USERS["$new_username"]="$(hash_password "$new_password")"
+      echo "Користувача $new_username успішно зареєстровано!"
+      return 0
+  }
+  
+  # Меню після успішної авторизації
+  post_login_menu() {
+      while true; do
+          echo "1) Вихід з системи"
+          echo "2) Продовжити роботу"
+          read -p "Оберіть дію: " choice
+  
+          case $choice in
+              1)
+                  echo "Вихід з системи. До побачення!"
+                  exit 0
+                  ;;
+              2)
+                  echo "Продовжуємо роботу..."
+                  break
+                  ;;
+              *)
+                  echo "Невірний вибір. Спробуйте ще раз."
+                  ;;
+          esac
+      done
+  }
+  
+  # Головне меню
+  while true; do
+      echo "1) Авторизація"
+      echo "2) Реєстрація нового користувача"
+      echo "3) Вихід"
+      read -p "Оберіть дію: " choice
+  
+      case $choice in
+          1)
+              login
+              if [[ $? -eq 0 ]]; then
+                  post_login_menu
+              fi
+              ;;
+          2)
+              register_user
+              ;;
+          3)
+              echo "Вихід із системи."
+              exit 0
+              ;;
+          *)
+              echo "Невірний вибір."
+              ;;
+      esac
+  done
+                          </code>
+                      </pre>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
+  
     <!-- Testimonials Ends Here -->
 
 
