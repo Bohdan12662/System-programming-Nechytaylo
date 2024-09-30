@@ -409,5 +409,5 @@ strong {
 .image-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Відстань між зображеннями */
+  gap: 200px; /* Відстань між зображеннями */
 }
