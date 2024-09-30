@@ -406,6 +406,8 @@ strong {
 .text1_1 {
   color: white;
 }
-.left-image img {
-  margin-bottom: 50px; /* Відстань під першим зображенням */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Відстань між зображеннями */
 }
