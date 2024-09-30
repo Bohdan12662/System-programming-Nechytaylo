@@ -198,39 +198,33 @@ https://templatemo.com/tm-541-host-cloud
     <!-- Testimonials Starts Here -->
     <div class="testimonials-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Testimonials</span>
-              <h2>What they say about us</h2>
-            </div>
-          </div>
-          <div class="col-md-10 offset-md-1">
-            <div class="owl-testimonials owl-carousel">
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
-                <h4>William Smith</h4>
-                <span>New Co-Founder</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
-                <h4>Vinny Smart</h4>
-                <span>Digital Marketer</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
-                <h4>Trevor Liam</h4>
-                <span>Technology Chef</span>
-              </div>
+        <div class="section-heading">
+          <div class="bash-script-section">
+            <h3 class="section-title">BASH Скрипт: Авторизація в системі</h3>
+            <div class="code-block">
+              <pre>
+                <code>
+    #!/bin/bash
+    
+    # Встановіть тут правильні дані для авторизації
+    CORRECT_USERNAME="bohdan"
+    CORRECT_PASSWORD="1111"
+    
+    # Запит на ім'я користувача
+    read -p "Введіть ім'я користувача: " username
+    
+    # Запит на пароль (використовується -s для приховування введеного пароля)
+    read -sp "Введіть пароль: " password
+    echo
+    
+    # Перевірка даних
+    if [[ "$username" == "$CORRECT_USERNAME" && "$password" == "$CORRECT_PASSWORD" ]]; then
+        echo "Авторизація успішна! Ласкаво просимо, $username!"
+    else
+        echo "Неправильне ім'я користувача або пароль."
+    fi
+                </code>
+              </pre>
             </div>
           </div>
         </div>
