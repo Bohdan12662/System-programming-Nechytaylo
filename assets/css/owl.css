@@ -411,3 +411,6 @@ strong {
   flex-direction: column;
   gap: 200px; /* Відстань між зображеннями */
 }
+.left-image {
+  margin-bottom: 200px; /* Відстань між зображеннями */
+}
